@@ -2,12 +2,12 @@
   "name": "mongoose-mango-project",
   "version": "1.0.0",
   "description": "API stands for Application Programming Interface.",
-  "main": "index.js",
+  "main": "server.ts",
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "node src/server.ts",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -37,5 +37,13 @@
     "tsx": "^4.22.4",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.62.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azizulhakim6817/mongooes-pre-post-instance-static.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azizulhakim6817/mongooes-pre-post-instance-static/issues"
+  },
+  "homepage": "https://github.com/azizulhakim6817/mongooes-pre-post-instance-static#readme"
 }
