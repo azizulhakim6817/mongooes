@@ -340,6 +340,9 @@ runValidators: true হলো M.jsongoose-এর একটি অপশন, য�
     - vercel --prod
     - vercel logout
 
+---> vercel project name ---> protfolio  
+ ---> not vercel project name ---> protfolio/page-blogs
+
 # npx -----------------------------------------------
 
 --> npx vercel
