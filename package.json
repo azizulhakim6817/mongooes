@@ -38,13 +38,5 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.62.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/azizulhakim6817/mongooes-pre-post-instance-static.git"
-  },
-  "bugs": {
-    "url": "https://github.com/azizulhakim6817/mongooes-pre-post-instance-static/issues"
-  },
-  "homepage": "https://github.com/azizulhakim6817/mongooes-pre-post-instance-static#readme"
+  }
 }
