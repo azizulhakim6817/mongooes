@@ -32,10 +32,12 @@ export const getAllMangoController = async (req: Request, res: Response) => {
       data,
     });
   } catch (error) {
+    console.error(error);
+
     res.status(500).json({
       success: false,
       message: "Failed to get mangoes!",
-      error,
+      error: error instanceof Error ? error.message : String(error),
     });
   }
 };
