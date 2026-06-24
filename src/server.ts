@@ -1,13 +1,10 @@
 import mongoose from "mongoose";
 import app from "./app";
-import config from "./app/config/index";
+import config from "./app/config";
 
 async function server() {
   try {
-    if (!config.database_url) {
-      throw new Error("DATABASE_URL is not defined");
-    }
-    await mongoose.connect(config.database_url);
+    await mongoose.connect(config.database_url as string);
 
     console.log("Database is connected");
 
