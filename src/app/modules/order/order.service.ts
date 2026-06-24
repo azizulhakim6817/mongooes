@@ -1,5 +1,5 @@
-import { IOrder } from "./order.interface.js";
-import { OrderModel } from "./order.model.js";
+import { IOrder } from "./order.interface";
+import { OrderModel } from "./order.model";
 
 //! create order service
 const createService = async (newBody: IOrder) => {

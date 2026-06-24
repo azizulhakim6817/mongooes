@@ -1,5 +1,5 @@
-import { IUser } from "./user.interface.js";
-import { UserModel } from "./user.model.js";
+import { IUser } from "./user.interface";
+import { UserModel } from "./user.model";
 
 //! create user
 const createUserService = async (payload: IUser) => {

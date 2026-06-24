@@ -1,6 +1,6 @@
 import { model, Schema } from "mongoose";
-import { MangoModel } from "../mango/mango.model.js";
-import { IOrder, IOrderModel } from "./order.interface.js";
+import { MangoModel } from "../mango/mango.model";
+import { IOrder, IOrderModel } from "./order.interface";
 
 // Address Schema
 const AddressSchema = new Schema(

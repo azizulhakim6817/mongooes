@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { mangoServices } from "./mango.service.js";
+import { mangoServices } from "./mango.service";
 
 //! create mango
 export const createMangoController = async (req: Request, res: Response) => {

@@ -3,7 +3,7 @@ import express from "express";
 import ratLimit from "express-rate-limit";
 import helmet from "helmet";
 import hpp from "hpp";
-import router from "./routes.js";
+import router from "./routes";
 
 const app = express();
 

@@ -6,7 +6,7 @@ import {
   queryUserController,
   singleUserController,
   updateUserController,
-} from "./user.controller.js";
+} from "./user.controller";
 
 const userRoutes = Router();
 

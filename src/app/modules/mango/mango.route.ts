@@ -7,7 +7,7 @@ import {
   searchMangoController,
   singleMangoController,
   updateMangoController,
-} from "./mango.controller.js";
+} from "./mango.controller";
 
 const mangoRoute = Router();
 

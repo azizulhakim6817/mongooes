@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { userServices } from "./user.service.js";
+import { userServices } from "./user.service";
 
 //! create user
 export const createUserController = async (req: Request, res: Response) => {

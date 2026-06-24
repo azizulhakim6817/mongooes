@@ -1,5 +1,5 @@
 import { model, Schema } from "mongoose";
-import { IMango } from "./mango.interface.js";
+import { IMango } from "./mango.interface";
 
 const mangoSchema = new Schema<IMango>(
   {

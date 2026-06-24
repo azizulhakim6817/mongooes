@@ -1,5 +1,5 @@
-import { IMango } from "./mango.interface.js";
-import { MangoModel } from "./mango.model.js";
+import { IMango } from "./mango.interface";
+import { MangoModel } from "./mango.model";
 
 //! create mango
 const createMangoService = async (newBody: IMango) => {
