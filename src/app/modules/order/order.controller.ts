@@ -2,10 +2,7 @@ import { Request, Response } from "express";
 import { orderService } from "./order.service";
 
 //! create order
-export const createOrderController = async (
-  req: Request,
-  res: Response
-) => {
+export const createOrderController = async (req: Request, res: Response) => {
   try {
     const newBody = req.body;
     const data = await orderService.createService(newBody);
@@ -25,10 +22,7 @@ export const createOrderController = async (
 };
 
 //! get all orders
-export const getOrderController = async (
-  req: Request,
-  res: Response
-) => {
+export const getOrderController = async (req: Request, res: Response) => {
   try {
     const data = await orderService.allOrderService();
 
@@ -38,10 +32,12 @@ export const getOrderController = async (
       data,
     });
   } catch (error) {
+    console.error(error);
+
     res.status(500).json({
       success: false,
-      message: "Failed to fetch orders",
-      error,
+      message: "Failed to get users",
+      error: error instanceof Error ? error.message : String(error),
     });
   }
 };

@@ -9,7 +9,7 @@ const createService = async (newBody: IOrder) => {
 
   //! custom static-2 method----------------------------
   await OrderModel.checkStock(newBody.mango.toString(), newBody.quantity);
-  
+
   const order = await OrderModel.create(newBody);
   return order;
 
@@ -28,7 +28,6 @@ const createService = async (newBody: IOrder) => {
 //! get all orders service
 const allOrderService = async () => {
   const order = await OrderModel.find().populate("user").populate("mango");
-
   return order;
 };
 

@@ -5,7 +5,7 @@ import config from "./app/config";
 async function server() {
   try {
     await mongoose.connect(config.database_url as string);
-    console.log("DATABASE_URL:", config.database_url);
+    //console.log("DATABASE_URL:", config.database_url);
     console.log("Database is connected");
     app.listen(config.port, () => {
       console.log(`Server is running http://localhost:${config.port}`);
